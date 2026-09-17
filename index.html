@@ -56,7 +56,7 @@
       "alternateName": "Gesso e Drywall RJ",
       "url": "https://gessoedrywallrj.com.br/",
       "mainEntityOfPage": {
-        "@id": "https://gessoedrywallrj.s3.us-east-1.amazonaws.com/index.html#webpage"
+        "@id": "https://gessotech-brand-hub.vercel.app/"
       },
       "description": "Empresa especializada em serviços de gesso e drywall para obras residenciais e comerciais no Rio de Janeiro e Baixada Fluminense.",
       "slogan": "Tecnologia, qualidade e mão de obra profissional para a sua obra.",
@@ -130,19 +130,19 @@
           "url": "https://gessoedrywallrj-cc767.web.app",
           "name": "Gessotech - Brand Hub Firebase"
         },
-		{
-		  "@type": "WebPage",
+        {
+          "@type": "WebPage",
           "url": "https://gessoedrywalrj.github.io/gessotech/",
           "name": "Gessotech - Brand Hub Github"
-		},
+        },
         {
           "@type": "WebPage",
           "url": "https://gessotech.vercel.app/",
-          "name": "Gessotech - Brand Hub Vercel"	
-        }		  
+          "name": "Gessotech - Brand Hub Vercel"
+        }
       ],
       "sameAs": [
-		"https://gessoedrywallrj.blogspot.com/",
+        "https://gessoedrywallrj.blogspot.com/",
         "https://medium.com/@gessoedrywalrj",
         "https://www.tumblr.com/gessoedrywallrj",
         "https://gessoedrywallrj.wordpress.com/",
@@ -260,6 +260,76 @@
           "name": "São Gonçalo",
           "url": "https://gessoedrywallrj.com.br/gesseiro-em-sao-goncalo/",
           "sameAs": "https://www.wikidata.org/wiki/Q83114"
+        },
+        {
+          "@type": "Place",
+          "name": "Anchieta",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-anchieta/",
+          "sameAs": "https://www.wikidata.org/wiki/Q3615199"
+        },
+        {
+          "@type": "Place",
+          "name": "Bangu",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-bangu/",
+          "sameAs": "https://www.wikidata.org/wiki/Q2419968"
+        },
+        {
+          "@type": "Place",
+          "name": "Botafogo",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-botafogo/",
+          "sameAs": "https://www.wikidata.org/wiki/Q894624"
+        },
+        {
+          "@type": "Place",
+          "name": "Copacabana",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-copacabana/",
+          "sameAs": "https://www.wikidata.org/wiki/Q202730"
+        },
+        {
+          "@type": "Place",
+          "name": "Queimados",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-queimados/"
+        },
+        {
+          "@type": "Place",
+          "name": "Realengo",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-realengo/",
+          "sameAs": "https://www.wikidata.org/wiki/Q3931112"
+        },
+        {
+          "@type": "Place",
+          "name": "Rocha Miranda",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-rocha-miranda/",
+          "sameAs": "https://www.wikidata.org/wiki/Q3939620"
+        },
+        {
+          "@type": "Place",
+          "name": "Vicente de Carvalho",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-em-vicente-de-carvalho/",
+          "sameAs": "https://www.wikidata.org/wiki/Q4011135"
+        },
+        {
+          "@type": "Place",
+          "name": "Barra da Tijuca",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-na-barra-da-tijuca/",
+          "sameAs": "https://www.wikidata.org/wiki/Q808789"
+        },
+        {
+          "@type": "Place",
+          "name": "Freguesia",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-na-freguesia/"
+        },
+        {
+          "@type": "Place",
+          "name": "Ilha do Governador",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-na-ilha-do-governador/",
+          "sameAs": "https://www.wikidata.org/wiki/Q1658442"
+        },
+        {
+          "@type": "Place",
+          "name": "Méier",
+          "url": "https://gessoedrywallrj.com.br/gesseiro-no-meier/",
+          "sameAs": "https://www.wikidata.org/wiki/Q3869228"
         }
       ],
       "hasOfferCatalog": {
@@ -540,6 +610,161 @@
       border: 0;
       display: block;
     }
+	
+	/* Estilos para a grade de regiões atendidas */
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.region-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-base);
+  padding: 22px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.region-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--brand-primary);
+}
+
+.region-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-primary);
+  border-radius: 50%;
+  color: white;
+  flex-shrink: 0;
+}
+
+.region-card a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.region-card a:hover {
+  color: var(--brand-primary);
+}
+
+/* Estilos para a lista de redes sociais */
+.social-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-list li {
+  flex: 1 1 120px; /* Minimum width for social icons */
+}
+
+.social-list li a {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-base);
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.social-list li a:hover {
+  background: var(--brand-primary);
+  color: white;
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+}
+
+/* Estilos para a seção de vídeo */
+.video-section {
+  background: var(--bg-card);
+  border-radius: var(--radius-base);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.video-section h2 {
+  color: var(--text-main);
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.video-section p {
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-size: 1.02rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  border-radius: var(--radius-base);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.btn-youtube {
+  display: inline-block;
+  background: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: var(--radius-base);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-youtube:hover {
+  background: var(--brand-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
 
     .video-container {
       position: relative;
@@ -705,102 +930,199 @@
       </div>
     </section>
 
-    <!-- REGIÕES ATENDIDAS (GRID DE MÍDIA) -->
-    <section class="content-card">
-      <h2 style="margin-top:0; border-left: 4px solid var(--brand-primary); padding-left: 12px; font-size: 1.4rem;">Regiões Atendidas</h2>
-      <p>Conheça algumas das principais localidades com cobertura de atendimento especializado:</p>
+    <!-- LOCALIDADES ATENDIDAS -->
+    <h3>🔧 Regiões Atendidas</h3>
+    <p>Atendemos diversas localidades no Rio de Janeiro e Baixada Fluminense:</p>
 
-      <div class="media-grid">
-        <div class="media-card">
-          <img src="https://i.imgur.com/IaAjgx6.jpeg" alt="Rio de Janeiro">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/" target="_blank">📍 Rio de Janeiro</a></div>
+    <div class="region-grid">
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/fGnDcr8.jpeg" alt="Penha RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-na-penha/" target="_blank">📍 Penha</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/09E0hQx.jpeg" alt="Tijuca RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-na-tijuca/" target="_blank">📍 Tijuca</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/zIwEZjI.jpeg" alt="Nilópolis RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-nilopolis/" target="_blank">📍 Nilópolis</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/ZnzxqBN.jpeg" alt="Madureira RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-madureira/" target="_blank">📍 Madureira</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/NJpEdjO.jpeg" alt="Mesquita RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-mesquita/" target="_blank">📍 Mesquita</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/99VrecW.jpeg" alt="Jacarepaguá RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-jacarepagua" target="_blank">📍 Jacarepaguá</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/ZEcDE0a.jpeg" alt="Belford Roxo RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-belford-roxo/" target="_blank">📍 Belford Roxo</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://gessoedrywallrj.com.br/wp-content/uploads/2026/07/Gesseiro-em-sao-cristovao.jpg" alt="São Cristóvão RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-sao-cristovao" target="_blank">📍 São Cristóvão</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/5hCirVm.jpeg" alt="Nova Iguaçu RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-nova-iguacu/" target="_blank">📍 Nova Iguaçu</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/Se6GkAY.jpeg" alt="Campo Grande RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-campo-grande-rj" target="_blank">📍 Campo Grande</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://gessoedrywallrj.com.br/wp-content/uploads/2026/07/Gesseiro-no-Recreio-dos-bandeirantes-1.jpg" alt="Recreio dos Bandeirantes RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-recreio-dos-bandeirantes/" target="_blank">📍 Recreio dos Bandeirantes</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/YQore3H.jpeg" alt="Duque de Caxias RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-duque-de-caxias/" target="_blank">📍 Duque de Caxias</a></div>
-        </div>
-        <div class="media-card">
-          <img src="https://i.imgur.com/Sk7iMkl.jpeg" alt="São João de Meriti RJ">
-          <div class="media-card-content"><a href="https://gessoedrywallrj.com.br/gesseiro-em-sao-joao-de-meriti/" target="_blank">📍 São João de Meriti</a></div>
-        </div>
+        <a href="https://gessoedrywallrj.com.br/" target="_blank">📍 Rio de Janeiro</a>
       </div>
-    </section>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-na-penha/" target="_blank">📍 Penha</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-na-tijuca/" target="_blank">📍 Tijuca</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-nilopolis/" target="_blank">📍 Nilópolis</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-madureira/" target="_blank">📍 Madureira</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-mesquita/" target="_blank">📍 Mesquita</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-jacarepagua/" target="_blank">📍 Jacarepaguá</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-belford-roxo/" target="_blank">📍 Belford Roxo</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-sao-cristovao/" target="_blank">📍 São Cristóvão</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-nova-iguacu/" target="_blank">📍 Nova Iguaçu</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-campo-grande-rj/" target="_blank">📍 Campo Grande</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-recreio-dos-bandeirantes/" target="_blank">📍 Recreio dos Bandeirantes</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-duque-de-caxias/" target="_blank">📍 Duque de Caxias</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-sao-joao-de-meriti/" target="_blank">📍 São João de Meriti</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-anchieta/" target="_blank">📍 Anchieta</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-bangu/" target="_blank">📍 Bangu</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-botafogo/" target="_blank">📍 Botafogo</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-copacabana/" target="_blank">📍 Copacabana</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-realengo/" target="_blank">📍 Realengo</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-rocha-miranda/" target="_blank">📍 Rocha Miranda</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-vicente-de-carvalho/" target="_blank">📍 Vicente de Carvalho</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-na-barra-da-tijuca/" target="_blank">📍 Barra da Tijuca</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-na-ilha-do-governador/" target="_blank">📍 Ilha do Governador</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-no-meier/" target="_blank">📍 Méier</a>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-na-freguesia/" target="_blank">📍 Freguesia</a>
+		</div>
+      <div class="region-card">
+        <div class="region-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <a href="https://gessoedrywallrj.com.br/gesseiro-em-queimados/" target="_blank">📍 Queimados</a>
+      </div>
+    </div>
 
-    <!-- REDES SOCIAIS E ESTRUTURA DE CLOUD STACKING -->
-    <section class="content-card">
-      <h2 style="margin-top:0; border-left: 4px solid var(--brand-primary); padding-left: 12px; font-size: 1.4rem;">Redes Sociais e Perfis Oficiais</h2>
-      <p>Acompanhe nossos conteúdos, portfólio e atualizações nas principais plataformas:</p>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
 
-      <ul class="link-cloud-list">
-        <li><a href="https://gessoedrywallrj.blogspot.com/" target="_blank">Blogspot</a></li>
-        <li><a href="https://medium.com/@gessoedrywalrj" target="_blank">Medium</a></li>
-        <li><a href="https://www.tumblr.com/gessoedrywallrj" target="_blank">Tumblr</a></li>
-        <li><a href="https://gessoedrywallrj.wordpress.com/" target="_blank">WordPress</a></li>
-        <li><a href="https://gessoedrywallrj.weebly.com/" target="_blank">Weebly</a></li>
-        <li><a href="https://gessoedrywallrj.mystrikingly.com/" target="_blank">Mystrikingly</a></li>
-        <li><a href="https://www.pinterest.com/gessoedrywallrj/" target="_blank">Pinterest</a></li>
-        <li><a href="https://www.youtube.com/@GessoeDrywalRJ" target="_blank">YouTube</a></li>
-        <li><a href="https://x.com/gessoedrywallrj" target="_blank">X (Twitter)</a></li>
-        <li><a href="https://www.facebook.com/gessoedrywalrj/" target="_blank">Facebook</a></li>
-        <li><a href="https://www.pearltrees.com/gessoedrywallrj" target="_blank">Pearltrees</a></li>
-        <li><a href="https://www.diigo.com/user/gessoedrywallrj" target="_blank">Diigo</a></li>
-        <li><a href="https://linktr.ee/gessoedrywalrj" target="_blank">Linktree</a></li>
-        <li><a href="https://about.me/gessoedrywallrj" target="_blank">About Me</a></li>
-        <li><a href="https://instapaper.com/p/gessoedrywallrj" target="_blank">Instapaper</a></li>
-        <li><a href="https://www.linkedin.com/in/gesso-e-drywal-rj" target="_blank">LinkedIn</a></li>
-        <li><a href="https://gessoedrywallrj.carrd.co/" target="_blank">Carrd</a></li>
-        <li><a href="https://500px.com/p/gessoedrywalrj" target="_blank">500px</a></li>
-        <li><a href="https://www.flickr.com/people/gessoedrywallrj/" target="_blank">Flickr</a></li>
-        <li><a href="https://gravatar.com/gessoedrywalrj" target="_blank">Gravatar</a></li>
-        <li><a href="https://pt.quora.com/profile/Gesso-e-Drywal-RJ" target="_blank">Quora</a></li>
-        <li><a href="https://speakerdeck.com/gessoedrywallrj" target="_blank">Speaker Deck</a></li>
-        <li><a href="https://www.reverbnation.com/gessotech" target="_blank">Reverbnation</a></li>
-        <li><a href="https://www.reddit.com/user/Virtual-Chapter-35/" target="_blank">Reddit</a></li>
-      </ul>
+    <!-- REDES SOCIAIS -->
+    <h3>🌐 Nossas Redes Sociais</h3>
+    <ul class="social-list">
+      <li><a href="https://gessoedrywallrj.blogspot.com/" target="_blank">Blogspot</a></li>
+      <li><a href="https://medium.com/@gessoedrywalrj" target="_blank">Medium</a></li>
+      <li><a href="https://www.tumblr.com/gessoedrywallr)" target="_blank">Tumblr</a></li>
+      <li><a href="https://gessoedrywallrj.wordpress.com/" target="_blank">WordPress</a></li>
+      <li><a href="https://gessoedrywallrj.weebly.com/" target="_blank">Weebly</a></li>
+      <li><a href="https://gessoedrywallrj.mystrikingly.com/" target="_blank">Mystrikingly</a></li>
+      <li><a href="https://www.pinterest.com/gessoedrywallrj/" target="_blank">Pinterest</a></li>
+      <li><a href="https://www.youtube.com/@GessoeDrywalRJ" target="_blank">YouTube</a></li>
+      <li><a href="https://x.com/gessoedrywallrj" target="_blank">X (Twitter)</a></li>
+      <li><a href="https://www.facebook.com/gessoedrywalrj/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.pearltrees.com/gessoedrywallrj" target="_blank">Pearltrees</a></li>
+      <li><a href="https://www.diigo.com/user/gessoedrywallrj" target="_blank">Diigo</a></li>
+      <li><a href="https://linktr.ee/gessoedrywalrj" target="_blank">Linktree</a></li>
+      <li><a href="https://about.me/gessoedrywallrj" target="_blank">About Me</a></li>
+      <li><a href="https://instapaper.com/p/gessoedrywallrj" target="_blank">Instapaper</a></li>
+      <li><a href="https://www.linkedin.com/in/gesso-e-drywal-rj" target="_blank">LinkedIn</a></li>
+      <li><a href="https://gessoedrywallrj.carrd.co/" target="_blank">Carrd</a></li>
+      <li><a href="https://500px.com/p/gessoedrywalrj" target="_blank">500px</a></li>
+      <li><a href="https://www.flickr.com/people/gessoedrywallrj/" target="_blank">Flickr</a></li>
+      <li><a href="https://gravatar.com/gessoedrywalrj" target="_blank">Gravatar</a></li>
+      <li><a href="https://pt.quora.com/profile/Gesso-e-Drywal-R)" target="_blank">Quora</a></li>
+      <li><a href="https://speakerdeck.com/gessoedrywallrj" target="_blank">Speaker Deck</a></li>
+      <li><a href="https://www.reverbnation.com/gessotec)" target="_blank">Reverbnation</a></li>
+      <li><a href="https://www.reddit.com/user/Virtual-Chapter-35/" target="_blank">Reddit</a></li>
+    </ul>
 
       <h3 style="margin-top:30px; font-size: 1.2rem; color: var(--text-main);">Cloud Stacking e Páginas do Projeto</h3>
       <ul class="link-cloud-list">
@@ -811,31 +1133,36 @@
       </ul>
     </section>
 
-    <!-- VÍDEO DE APRESENTAÇÃO -->
-    <section class="content-card" style="text-align: center;">
-      <h2 style="text-align: center; border-left: none; padding-left: 0;">Vídeo de Apresentação</h2>
-      <p style="text-align: center;">Assista ao vídeo para conhecer mais sobre os nossos padrões de acabamento e serviços em gesso.</p>
+
+    <!-- SEÇÃO VÍDEO -->
+    <div class="video-section">
+      <h2>Veja nossos serviços de gesseiro</h2>
+      <p>
+        Contratar um bom gesseiro é essencial para garantir acabamentos de gesso seguros, resistentes e com qualidade impecável. Confira vídeos e dicas para conhecer nosso trabalho.
+      </p>
+
+      <h3>Apresentação do Gessotech</h3>
       
-      <div class="video-container">
+      <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/S1ejj3FkE5g" 
-                title="Gessotech Apresentação" 
+                title="Gessotech" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
         </iframe>
       </div>
-      
-      <div style="margin-top: 25px;">
-        <a href="https://www.youtube.com/@GessoeDrywalRJ" target="_blank" style="display: inline-block; background: var(--brand-primary); color: #ffffff; padding: 12px 24px; border-radius: var(--radius-base); text-decoration: none; font-weight: 600;">Visitar Canal no YouTube</a>
-      </div>
-    </section>
 
-  </main>
+      <a href="https://www.youtube.com/@GessoeDrywalRJ" target="_blank" class="btn-youtube">
+        Inscreva-se no nosso canal no YouTube
+      </a>
+    </div>
+
+  </div>
 
   <footer>
-    <p>© 2026 Gessotech - Todos os direitos reservados.<br>
-    Página de autoridade principal: <a href="https://gessoedrywallrj.com.br/" target="_blank">gessoedrywallrj.com.br</a></p>
+    © 2026 Gessotech - Todos os direitos reservados.<br>
+    Página de autoridade principal: <a href="https://gessoedrywallrj.com.br/" target="_blank">gessoedrywallrj.com.br</a>
   </footer>
 
 </body>
